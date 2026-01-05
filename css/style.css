@@ -1,0 +1,724 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* homePage */ 
+.homePageBody{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+/* Top bar */
+.homePageBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #354860;
+    padding: 15px 25px;
+    color: white;
+}
+
+.homePageBar h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.homePageBar h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.homePageBar img {
+    height: 55px;
+    width: 55px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+
+/* Home Page Layout container */
+.homePageContentContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.homePageLeft {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.homePageLeft h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.listing {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.listing h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 10px;
+}
+
+.event-card {
+    width: 90%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.event-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    background: #e0e0e0;
+}
+
+.event-content {
+    padding: 12px;
+}
+
+.event-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.info-icon {
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.event-description {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 8px;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+    overflow: hidden;
+}
+
+.event-time {
+    font-weight: 500;
+    color: #2563eb;
+}
+
+.filter-btn {
+    background-color: rgb(224, 200, 82); 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 5px; 
+    border-radius: 9px; 
+    border-color: rgb(118, 118, 186); 
+}
+
+/* Body */
+.profileBody {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Home Bar / Header */
+.homeBar {
+    background-color: #354860;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.homeBar h1 {
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #d1e3ff;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.homeBar h3 {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.profile-picture-container {
+    position: relative;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #d5e546;
+}
+
+.edit-picture-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #e7e41f;
+    color: #47599a;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.edit-picture-btn:hover {
+    background-color: #a2b825;
+}
+
+.profile-info {
+    flex: 1;
+    margin-left: 30px;
+}
+
+.profile-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.location {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+    padding: 10px 20px;
+    background-color: #e7d91d;
+    color: #4e77c9;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.edit-profile-btn:hover {
+    background-color: #e06b3d;
+}
+
+/* Profile Sections */
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 10px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.modal-content input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #354860;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content input[type="submit"]:hover {
+    background-color:#354860;
+}
+
+
+.editPostingBody {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.create-events {
+    background: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-events h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#addForm label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#addForm input,
+#addForm select,
+#addForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#addForm textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+#addForm input[type="submit"] {
+    background-color: #12177a;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addForm input[type="submit"]:hover {
+    background-color: #2d4862;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.left {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.listing {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.listing h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 10px;
+}
+
+.event-card {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.event-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    background: #e0e0e0;
+}
+
+.event-content {
+    padding: 12px;
+}
+
+.event-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.info-icon {
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.event-description {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 8px;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+    overflow: hidden;
+}
+
+.event-time {
+    font-weight: 500;
+    color: #2563eb;
+}
+
+.messageBox { 
+    margin: 15px 0; 
+    padding: 12px; 
+    border-radius: 4px; 
+    display: none; 
+}
+.messageBox.success { 
+    background-color: #d4edda; 
+    color: #155724; 
+    border: 1px solid #c3e6cb; 
+    display: block;
+}
+.messageBox.error { 
+    background-color: #f8d7da; 
+    color: #721c24; 
+    border: 1px solid #f5c6cb; 
+    display: block;
+}
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: 500; }
+.form-group input, .form-group select, .form-group textarea { 
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+.form-group textarea { min-height: 100px; resize: vertical; }
+    button[type="submit"]:disabled { opacity: 0.6; cursor: not-allowed; 
+}
+
+table, th, td {
+    border: 2px solid rgb(37, 39, 143);
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+/* calendar style */ 
+.calendar {
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.calendar-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+#month-year {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.calendar-weekdays, .calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.calendar-weekdays div, .calendar-dates div {
+  text-align: center;
+  padding: 10px;
+}
+.calendar-weekdays {
+  background-color: #eaeef3;
+}
+.calendar-weekdays div {
+  font-weight: bold;
+}
+.calendar-dates div {
+  border-bottom: 1px solid #eaeef3;
+  cursor: pointer;
+}
+.calendar-dates div:hover {
+  background-color: #f1f1f1;
+  color: #33186f; 
+}
+
+.current-date {
+  background-color: rgb(224, 200, 82);
+  color: #fff;
+}
+
+/* login page */ 
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+        
+.login-container h2 {
+    text-align: center;
+}
+        
+.login-container label {
+    display: block;
+    margin-top: 10px;
+}
+        
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+        
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #2c28a8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+        
+.login-container input[type="submit"]:hover {
+    background-color:  #007399;
+}
+        
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #5c5fb9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+        
+.register-btn:hover {
+    background-color: #007399;
+}
+
+.loginBody {
+    font-family: Arial, sans-serif;
+}
+
+.bookmark-btn {
+    padding: 5px; 
+    background-color: #354860;
+    color: white; 
+    width: 50%; 
+    border-radius: 10px; 
+}
+
+.unbookmark-btn {
+    padding: 5px; 
+    background-color: rgb(224, 200, 82); 
+    width: 50%; 
+    border-radius: 10px; 
+}
+
+#myCanvas {
+    border: 1px solid #89abcd ; 
+    background-color: #89abcd; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+}
+
+.addEventText {
+    color: white; 
+    margin-left: 800px; 
+}
+
+.createEventText {
+    margin-top: 30px;
+    margin: 40px;  
+}
+
+.userTable {
+    margin: 20px; 
+}
+
+.eventsTable {
+    margin-left: 50px; 
+    box-shadow: #007399;
+}
+
+.delButton {
+    padding: 5px; 
+    background-color: #4d6db3; 
+    border-radius: 5px; 
+    color: white; 
+}
+
+.disabledButton {
+    padding: 5px; 
+    background-color: #666f85; 
+    border-radius: 5px; 
+    color: white; 
+}
+
+.delButton:hover{
+    padding: 5px; 
+    background-color: #8097c8; 
+    border-radius: 5px; 
+    color: white; 
+}
+
+.editButton {
+    padding: 5px; 
+    background-color: #dde243; 
+    border-radius: 5px; 
+}

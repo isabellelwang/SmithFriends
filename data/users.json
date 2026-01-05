@@ -1,0 +1,45 @@
+[
+    {
+        "username": "Alice",
+        "password": "1234",
+        "location": "Northampton",
+        "createdPosts": [
+            1
+        ],
+        "bookmarkedPosts": [],
+        "is_admin": true
+    },
+    {
+        "username": "dani",
+        "password": "meow",
+        "location": "Amherst",
+        "createdPosts": [
+            2,
+            3,
+            4
+        ],
+        "bookmarkedPosts": [],
+        "is_admin": false
+    },
+    {
+        "username": "isabelle",
+        "password": "1234",
+        "location": "Florence",
+        "createdPosts": [
+            5,
+            6
+        ],
+        "bookmarkedPosts": [],
+        "is_admin": false
+    },
+    {
+        "username": "bob",
+        "password": "111",
+        "location": "Northampton",
+        "createdPosts": [
+            7
+        ],
+        "bookmarkedPosts": [],
+        "is_admin": false
+    }
+]

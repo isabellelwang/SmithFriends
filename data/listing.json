@@ -1,0 +1,79 @@
+[
+    {
+        "event": "Bird Watching",
+        "image": "..\/listings\/69448ac19fb3c_1200.jpeg",
+        "id": 1,
+        "date": "2025-12-27",
+        "location": "Florence",
+        "start-time": "3:00",
+        "end-time": "6:00",
+        "description": "Early hike while bird watching.",
+        "host": "Alice"
+    },
+    {
+        "event": "Study Group",
+        "image": "..\/listings\/69448ed72f737_study.jpeg",
+        "id": 2,
+        "date": "2025-12-16",
+        "location": "Florence",
+        "start-time": "17:00",
+        "end-time": "21:00",
+        "description": "Study for CS finals.",
+        "host": "dani"
+    },
+    {
+        "event": "Skydiving",
+        "image": "..\/listings\/69448f01b9c3e_skydive.jpg",
+        "id": 3,
+        "date": "2025-12-20",
+        "location": "Amherst",
+        "start-time": "11:00",
+        "end-time": "14:00",
+        "description": "Let's skydive.",
+        "host": "dani"
+    },
+    {
+        "event": "Orchestra",
+        "image": "..\/listings\/69448f56f1b7f_orchestra.jpg",
+        "id": 4,
+        "date": "2025-12-25",
+        "location": "Northampton",
+        "start-time": "18:00",
+        "end-time": "22:00",
+        "description": "Christmas Songs.",
+        "host": "dani"
+    },
+    {
+        "event": "Zootopia Movie",
+        "image": "..\/listings\/69448f8361eb4_cinema.jpg",
+        "id": 5,
+        "date": "2025-12-20",
+        "location": "Amherst",
+        "start-time": "16:00",
+        "end-time": "19:00",
+        "description": "Let's watch Zootopia!!",
+        "host": "isabelle"
+    },
+    {
+        "event": "Ski Trip!",
+        "image": "..\/listings\/69448fa912224_ski.jpg",
+        "id": 6,
+        "date": "2025-12-20",
+        "location": "Amherst",
+        "start-time": "11:00",
+        "end-time": "18:00",
+        "description": "Smores campfire after.",
+        "host": "isabelle"
+    },
+    {
+        "event": "Cat Cafe",
+        "image": "..\/listings\/6944900a4d6e6_catCafe.jpg",
+        "id": 7,
+        "date": "2026-01-23",
+        "location": "Amherst",
+        "start-time": "9:00",
+        "end-time": "11:00",
+        "description": "Don't come if you're allergic...",
+        "host": "bob"
+    }
+]
